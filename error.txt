@@ -1,0 +1,204 @@
+Traceback (most recent call last):
+
+  File "Egoshare_1_GetCaptchas.py", line 79, in <module>
+    save_image(i)
+
+  File "Egoshare_1_GetCaptchas.py", line 72, in save_image
+    write_file(file, a)
+
+  File "Egoshare_1_GetCaptchas.py", line 46, in write_file
+    f=open(file, 'wb')
+
+IOError: [Errno 2] No such file or directory: 'Egoshare/Rough Captchas/Image000.jpg'
+Traceback (most recent call last):
+
+  File "Egoshare_1_GetCaptchas.py", line 79, in <module>
+    save_image(i)
+
+  File "Egoshare_1_GetCaptchas.py", line 72, in save_image
+    write_file(file, a)
+
+  File "Egoshare_1_GetCaptchas.py", line 46, in write_file
+    f=open(file, 'wb')
+
+IOError: [Errno 2] No such file or directory: 'Egoshare/Rough Captchas/Image000.jpg'
+Traceback (most recent call last):
+
+  File "Hotmail_1_GetCaptchas.py", line 63, in <module>
+    save_image(i)
+
+  File "Hotmail_1_GetCaptchas.py", line 56, in save_image
+    a, b, req1 = request(LIEN_IMAGES, param=1)
+
+  File "Hotmail_1_GetCaptchas.py", line 36, in request
+    handle = urllib2.urlopen(req)
+
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 127, in urlopen
+    return _opener.open(url, data, timeout)
+
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 410, in open
+    response = meth(req, response)
+
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 523, in http_response
+    'http', request, response, code, msg, hdrs)
+
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 448, in error
+    return self._call_chain(*args)
+
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 382, in _call_chain
+    result = func(*args)
+
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 531, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+
+HTTPError: HTTP Error 500: 
+Traceback (most recent call last):
+
+  File "Hotmail_1_GetCaptchas.py", line 63, in <module>
+    save_image(i)
+
+  File "Hotmail_1_GetCaptchas.py", line 56, in save_image
+    a, b, req1 = request(LIEN_IMAGES, param=1)
+
+  File "Hotmail_1_GetCaptchas.py", line 36, in request
+    handle = urllib2.urlopen(req)
+
+  File "/usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+
+  File "/usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 437, in open
+    response = meth(req, response)
+
+  File "/usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 550, in http_response
+    'http', request, response, code, msg, hdrs)
+
+  File "/usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 475, in error
+    return self._call_chain(*args)
+
+  File "/usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 409, in _call_chain
+    result = func(*args)
+
+  File "/usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/lib/python2.7/urllib2.py", line 558, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+
+HTTPError: HTTP Error 500: 
+Traceback (most recent call last):
+
+  File "Egoshare_1_bis_GetLabelledCaptchas.py", line 11, in <module>
+    from Break_Egoshare_Captcha import load_model, preprocess_captcha_part, break_captcha
+
+  File "/home/sjtu/captchacker/Break_Egoshare_Captcha.py", line 2, in <module>
+    from svm import *
+
+  File "/home/sjtu/captchacker/svm.py", line 314, in <module>
+    fillprototype(libsvm.svm_get_sv_indices, None, [POINTER(svm_model), POINTER(c_int)])
+
+  File "/usr/lib/python2.7/ctypes/__init__.py", line 378, in __getattr__
+    func = self.__getitem__(name)
+
+  File "/usr/lib/python2.7/ctypes/__init__.py", line 383, in __getitem__
+    func = self._FuncPtr((name_or_ordinal, self))
+
+AttributeError: /usr/lib/libsvm.so.3: undefined symbol: svm_get_sv_indices
+Traceback (most recent call last):
+
+  File "Egoshare_1_bis_GetLabelledCaptchas.py", line 11, in <module>
+    from Break_Egoshare_Captcha import load_model, preprocess_captcha_part, break_captcha
+
+  File "/home/sjtu/captchacker/Break_Egoshare_Captcha.py", line 2, in <module>
+    from svm import *
+
+  File "/home/sjtu/captchacker/svm.py", line 314, in <module>
+    fillprototype(libsvm.svm_get_sv_indices, None, [POINTER(svm_model), POINTER(c_int)])
+
+  File "/usr/lib/python2.7/ctypes/__init__.py", line 378, in __getattr__
+    func = self.__getitem__(name)
+
+  File "/usr/lib/python2.7/ctypes/__init__.py", line 383, in __getitem__
+    func = self._FuncPtr((name_or_ordinal, self))
+
+AttributeError: /usr/lib/libsvm.so.3: undefined symbol: svm_get_sv_indices
+Traceback (most recent call last):
+
+  File "Egoshare_1_bis_GetLabelledCaptchas.py", line 11, in <module>
+    from Break_Egoshare_Captcha import load_model, preprocess_captcha_part, break_captcha
+
+  File "/home/sjtu/captchacker/Break_Egoshare_Captcha.py", line 2, in <module>
+    from svm import *
+
+  File "/home/sjtu/captchacker/svm.py", line 314, in <module>
+    fillprototype(libsvm.svm_get_sv_indices, None, [POINTER(svm_model), POINTER(c_int)])
+
+  File "/usr/lib/python2.7/ctypes/__init__.py", line 378, in __getattr__
+    func = self.__getitem__(name)
+
+  File "/usr/lib/python2.7/ctypes/__init__.py", line 383, in __getitem__
+    func = self._FuncPtr((name_or_ordinal, self))
+
+AttributeError: /usr/lib/libsvm.so.3: undefined symbol: svm_get_sv_indices
+Traceback (most recent call last):
+
+  File "Egoshare_1_bis_GetLabelledCaptchas.py", line 11, in <module>
+    from Break_Egoshare_Captcha import load_model, preprocess_captcha_part, break_captcha
+
+  File "/home/sjtu/captchacker/Break_Egoshare_Captcha.py", line 2, in <module>
+    from svm import *
+
+  File "/home/sjtu/captchacker/svm.py", line 314, in <module>
+    fillprototype(libsvm.svm_get_sv_indices, None, [POINTER(svm_model), POINTER(c_int)])
+
+  File "/usr/lib/python2.7/ctypes/__init__.py", line 378, in __getattr__
+    func = self.__getitem__(name)
+
+  File "/usr/lib/python2.7/ctypes/__init__.py", line 383, in __getitem__
+    func = self._FuncPtr((name_or_ordinal, self))
+
+AttributeError: /usr/lib/libsvm.so.3: undefined symbol: svm_get_sv_indices
+Traceback (most recent call last):
+
+  File "Egoshare_1_bis_GetLabelledCaptchas.py", line 11, in <module>
+    from Break_Egoshare_Captcha import load_model, preprocess_captcha_part, break_captcha
+
+  File "/home/sjtu/captchacker/Break_Egoshare_Captcha.py", line 2, in <module>
+    from svm import *
+
+  File "/home/sjtu/captchacker/svm.py", line 314, in <module>
+    fillprototype(libsvm.svm_get_sv_indices, None, [POINTER(svm_model), POINTER(c_int)])
+
+  File "/usr/lib/python2.7/ctypes/__init__.py", line 378, in __getattr__
+    func = self.__getitem__(name)
+
+  File "/usr/lib/python2.7/ctypes/__init__.py", line 383, in __getitem__
+    func = self._FuncPtr((name_or_ordinal, self))
+
+AttributeError: /usr/lib/libsvm.so.3: undefined symbol: svm_get_sv_indices
+Traceback (most recent call last):
+
+  File "Hotmail_1_GetCaptchas.py", line 63, in <module>
+    save_image(i)
+
+  File "Hotmail_1_GetCaptchas.py", line 56, in save_image
+    a, b, req1 = request(LIEN_IMAGES, param=1)
+
+  File "Hotmail_1_GetCaptchas.py", line 36, in request
+    handle = urllib2.urlopen(req)
+
+  File "/usr/lib/python2.7/urllib2.py", line 126, in urlopen
+    return _opener.open(url, data, timeout)
+
+  File "/usr/lib/python2.7/urllib2.py", line 406, in open
+    response = meth(req, response)
+
+  File "/usr/lib/python2.7/urllib2.py", line 519, in http_response
+    'http', request, response, code, msg, hdrs)
+
+  File "/usr/lib/python2.7/urllib2.py", line 444, in error
+    return self._call_chain(*args)
+
+  File "/usr/lib/python2.7/urllib2.py", line 378, in _call_chain
+    result = func(*args)
+
+  File "/usr/lib/python2.7/urllib2.py", line 527, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+
+HTTPError: HTTP Error 500: 

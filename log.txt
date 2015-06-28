@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+
+  File "Hotmail_2_GenerateDB.py", line 60, in <module>
+    [], DXDY)
+
+  File "/Users/mike/Code/captchacker/Isolated_Char_Generator.py", line 84, in Generate_Set
+    captcha=MyCaptcha(scale, distortion = (distort_w,distort_h), solution = elem, font=font, alignx=alignx, aligny=aligny, size = DEFAULT_SIZE)
+
+  File "/Users/mike/Code/captchacker/Isolated_Char_Generator.py", line 28, in __init__
+    font = ImageFont.truetype(*self.fontFactory.pick())
+
+  File "/Library/Python/2.7/site-packages/PIL/ImageFont.py", line 240, in truetype
+    return FreeTypeFont(font, size, index, encoding)
+
+  File "/Library/Python/2.7/site-packages/PIL/ImageFont.py", line 137, in __init__
+    self.font = core.getfont(font, size, index, encoding)
+
+IOError: cannot open resource

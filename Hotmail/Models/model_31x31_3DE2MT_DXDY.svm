@@ -1,0 +1,11 @@
+svm_type c_svc
+kernel_type rbf
+gamma 0
+nr_class 0
+total_sv 0
+rho
+label
+probA
+probB
+nr_sv
+SV

@@ -1,0 +1,7 @@
+Known bugs:
+
+- PersistentFactory() is almost certainly horrible at concurrent access
+- Tests are never invalidated with PersistentStorage(), as they aren't written back to the database
+- All files in Captcha/data are installed, including silly things like .svn directories and *~
+
+

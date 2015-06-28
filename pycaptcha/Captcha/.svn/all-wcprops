@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/misc/!svn/ver/10116/trunk/pycaptcha/Captcha
+END
+Base.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/misc/!svn/ver/10116/trunk/pycaptcha/Captcha/Base.py
+END
+Words.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/misc/!svn/ver/10116/trunk/pycaptcha/Captcha/Words.py
+END
+File.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/misc/!svn/ver/10116/trunk/pycaptcha/Captcha/File.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/misc/!svn/ver/10116/trunk/pycaptcha/Captcha/__init__.py
+END

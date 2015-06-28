@@ -1,0 +1,24 @@
+g++ `pkg-config --cflags --libs opencv` main.cpp -o main
+
+g++ -I/usr/include/opencv main.cpp -o main -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+
+sudo apt-get install libboost-dev
+sudo apt-get install libboost-filesystem-dev
+
+Change leaf() to path().filename().string()
+nnative_directory_string() to string
+
+g++ -I/usr/include/opencv -I /usr/include/boost main.cpp -o main -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann -lboost_system  -lboost_filesystem
+
+
+sudo ln /dev/null /dev/raw1394
+
+
+
+For other Python newbies like me:
+
+ svn co http://svn.navi.cx/misc/trunk/pycaptcha/
+ cd pycaptcha
+ python2.7 setup.py install
+
+sudo cp -r Fonts /usr/local/lib/python2.7/dist-packages/Captcha/data/fonts/

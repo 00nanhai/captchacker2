@@ -1,0 +1,11 @@
+HOTMAIL:
+--------
+#Cross-validation sur 580 caractères
+C=1	gamma=default	=>	97.2222222222
+C=10	gamma=default	=>	99.1319444444
+C=100	gamma=default	=>	98.9583333333
+C=1000	gamma=default	=>	98.7847222222
+C=10000	gamma=default	=>	99.1319444444
+
+EGOSHARE (captcha-based):
+-------------------------

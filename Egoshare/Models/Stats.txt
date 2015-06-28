@@ -1,0 +1,198 @@
+model_C=1_KERNEL=0.svm	45.0%
+model_C=1_KERNEL=2.svm	49.0%
+model_C=10_KERNEL=0.svm	45.0%
+model_C=10_KERNEL=2.svm	51.0%
+model_C=100_KERNEL=0.svm	45.0%
+model_C=100_KERNEL=2.svm	52.0%
+model_C=1000_KERNEL=0.svm	45.0%
+model_C=1000_KERNEL=2.svm	52.0%
+model_C=5000_KERNEL=2.svm	52.0%
+
+
+APRES AMELIORATION DU JEU DE DONNEES:
+model_C=100_KERNEL=2.svm	54.0%
+model_C=1000_KERNEL=2.svm	54.0%
+<<<<<<< .mine
+model_C=10000_KERNEL=2.svm	54.0%
+
+ESSAIS (un seul alignement):
+model_522chiffres_aligny=1_C=1000_KERNEL=2.svm	44.0%
+model_aligny=0.5_C=100_KERNEL=2.svm	31.0%
+model_aligny=0.5_C=100_KERNEL=2.svm	31.0%
+
+TESTS DES NOYAUX:
+model_aligny=0.7_C=1000_KERNEL=2.svm	51.0%
+model_aligny=0.7_C=1000_KERNEL=1.svm	51.0%
+model_aligny=0.7_C=1000_KERNEL=3.svm	38.0%
+model_aligny=0.7_C=1000_KERNEL=4.svm	0.0%
+model_aligny=0.7_C=1000_KERNEL=0.svm	47.0%
+=======
+model_C=1000_KERNEL=2.svm	52.0%
+model_C=1000_KERNEL=2.svm	52.0%
+
+CAPTCHA_DATA:
+model_WITH_CAPTCHA_DATA_TRANING_SET_C=1000_KERNEL=2.svm	99.8158379374%
+model_WITH_CAPTCHA_DATA_C=1000_KERNEL=2.svm	96.0%
+model_WITH_CAPTCHA_DATA_C=10_KERNEL=1.svm	96.0%
+model_WITH_CAPTCHA_DATA_C=10_KERNEL=2.svm	96.0%
+model_WITH_CAPTCHA_DATA_C=100_KERNEL=1.svm	97.0%
+model_WITH_CAPTCHA_DATA_C=100_KERNEL=2.svm	96.0%
+model_WITH_CAPTCHA_DATA_C=1000_KERNEL=1.svm	97.0%
+model_WITH_CAPTCHA_DATA_C=1000_KERNEL=2.svm	96.0%
+model_WITH_CAPTCHA_DATA_C=10000_KERNEL=1.svm	97.0%
+model_WITH_CAPTCHA_DATA_C=10000_KERNEL=2.svm	97.0%
+
+model_WITH_CAPTCHA_DATA_C=1000_KERNEL=1.svm	97.9797979798%
+
+
+############################
+Training set:	496 captchas
+Test set :		108 captchas
+############################
+captcha_based_TR=496_TEST=108_C=1_KERNEL=1.svm	90.7407407407%
+captcha_based_TR=496_TEST=108_C=1_KERNEL=2.svm	89.8148148148%
+captcha_based_TR=496_TEST=108_C=100_KERNEL=1.svm	98.1481481481%
+captcha_based_TR=496_TEST=108_C=100_KERNEL=2.svm	97.2222222222%
+captcha_based_TR=496_TEST=108_C=1000_KERNEL=1.svm	98.1481481481%
+captcha_based_TR=496_TEST=108_C=1000_KERNEL=2.svm	97.2222222222%
+captcha_based_TR=496_TEST=108_C=5000_KERNEL=1.svm	98.1481481481%
+captcha_based_TR=496_TEST=108_C=5000_KERNEL=2.svm	97.2222222222%
+captcha_based_TR=496_TEST=108_C=10000_KERNEL=1.svm	98.1481481481%
+captcha_based_TR=496_TEST=108_C=10000_KERNEL=2.svm	97.2222222222%
+
+
+captcha_based_TR=496_TEST=108_C=1000_KERNEL=1.svm	97.9797979798%
+
+
+
+
+########################################
+#TEST de gamma pour un noyau polynomial#
+########################################
+captcha_based_TR=496_TEST=108_C=1000_KERNEL=1_GAMMA=0.001.svm	97.9797979798%
+captcha_based_TR=496_TEST=108_C=1000_KERNEL=1_GAMMA=0.002.svm	97.9797979798%
+captcha_based_TR=496_TEST=108_C=1000_KERNEL=1_GAMMA=0.0025.svm	97.9797979798%
+captcha_based_TR=496_TEST=108_C=1000_KERNEL=1_GAMMA=0.003.svm	97.9797979798%
+captcha_based_TR=496_TEST=108_C=1000_KERNEL=1_GAMMA=0.004.svm	97.9797979798%
+
+
+########################################
+#TEST du degré pour un noyau polynomial#
+########################################
+captcha_based_TR=496_TEST=108_C=1000_KERNEL=1_DEGREE=1.svm	96.9696969697%
+captcha_based_TR=496_TEST=108_C=1000_KERNEL=1_DEGREE=2.svm	95.9595959596%
+captcha_based_TR=496_TEST=108_C=1000_KERNEL=1_DEGREE=3.svm	97.9797979798%
+captcha_based_TR=496_TEST=108_C=1000_KERNEL=1_DEGREE=4.svm	97.9797979798%
+captcha_based_TR=496_TEST=108_C=1000_KERNEL=1_DEGREE=5.svm	97.9797979798%
+
+
+
+############### AVEC RAJOUT DE CAPTCHAS LABELES AUTOMATIQUEMENT #############
+Training set:	576 captchas
+Test set :		143 captchas
+##############################################################################
+captcha_based_TR=576_TEST=143_C=1000_KERNEL=2.svm	97.9020979021%
+captcha_based_TR=576_TEST=143_C=1000_KERNEL=1.svm	99.3006993007%
+captcha_based_TR=576_TEST=143_C=1000_KERNEL=2.svm	97.2027972028%
+captcha_based_TR=576_TEST=143_C=1000_KERNEL=2.svm	97.2027972028%
+captcha_based_TR=576_TEST=143_C=1000_KERNEL=1.svm	97.9020979021%
+
+captcha_based_TR=576_TEST=143_C=1000_KERNEL=1.svm	99.3006993007%
+model_WITH_CAPTCHA_DATA_C=1000_KERNEL=1.svm	100.0%
+
+
+
+############### AVEC RAJOUT DE CAPTCHAS LABELES AUTOMATIQUEMENT #############
+Training set:	687 captchas
+Test set :		143 captchas
+##############################################################################
+captcha_based_TR=687_TEST=143_C=1000_KERNEL=2.svm	100.0%
+captcha_based_TR=687_TEST=143_C=1000_KERNEL=1.svm	100.0%
+
+
+
+############### AVEC RAJOUT DE CAPTCHAS LABELES AUTOMATIQUEMENT #############
+Training set:	1018 captchas
+Test set :		348 captchas
+##############################################################################
+captcha_based_TR=1018_TEST=348_C=1000_KERNEL=2.svm	98.8505747126%
+captcha_based_TR=1018_TEST=348_C=1000_KERNEL=1.svm	98.8505747126%
+
+############################
+# Test set : 348 Captchas: #
+############################
+captcha_based_TR=687_TEST=143_C=1000_KERNEL=1.svm	99.4252873563%
+captcha_based_TR=687_TEST=143_C=1000_KERNEL=2.svm	99.1379310345%
+captcha_based_TR=576_TEST=143_C=1000_KERNEL=1.svm	98.8505747126%
+
+
+#test de différents paramètres
+captcha_based_TR=1018_TEST=348_C=1_KERNEL=2.svm	96.5517241379%
+captcha_based_TR=1018_TEST=348_C=1_KERNEL=1.svm	97.1264367816%
+captcha_based_TR=1018_TEST=348_C=10_KERNEL=2.svm	98.5632183908%
+captcha_based_TR=1018_TEST=348_C=10_KERNEL=1.svm	98.8505747126%
+captcha_based_TR=1018_TEST=348_C=100_KERNEL=2.svm	98.8505747126%
+captcha_based_TR=1018_TEST=348_C=100_KERNEL=1.svm	98.8505747126%
+captcha_based_TR=1018_TEST=348_C=1000_KERNEL=2.svm	98.8505747126%
+captcha_based_TR=1018_TEST=348_C=1000_KERNEL=1.svm	98.8505747126%
+captcha_based_TR=1018_TEST=348_C=10000_KERNEL=2.svm	98.8505747126%
+captcha_based_TR=1018_TEST=348_C=10000_KERNEL=1.svm	98.8505747126%
+
+
+############### AVEC RAJOUT DE CAPTCHAS LABELES AUTOMATIQUEMENT #############
+Training set:	1896 captchas
+Test set :		714 captchas
+##############################################################################
+captcha_based_TR=1896_TEST=714_C=1000_KERNEL=2.svm	99.1596638655%
+captcha_based_TR=1896_TEST=714_C=1000_KERNEL=1.svm	99.1596638655%
+
+#############################################
+SIMULATION-BASED avec centrage des caractères
+#############################################
+simulation_based_C=1000_KERNEL=2.svm	72.8291316527%
+simulation_based_C=1000_KERNEL=1.svm	73.6694677871%
+simulation_based_C=1000_KERNEL=1.svm	73.6694677871%
+
+Avec plus de rotations:
+-----------------------
+simulation_based_NEW_C=1000_KERNEL=2.svm	76.0504201681%
+simulation_based_NEW_C=1000_KERNEL=1.svm	77.4509803922%
+
+simulation_based_NEW_C=1000_KERNEL=2.svm	74.2296918768%
+
+
+#############################################
+  POUR LE RAPPORT SIMULATION-BASED (1116 images / character):
+#############################################
+simulation_based_NEW_C=1000_KERNEL=2.svm	78.2913165266%
+simulation_based_NEW_C=1000_KERNEL=1.svm	78.2913165266%
+simulation_based_NEW_C=1000_KERNEL=0.svm	74.649859944%
+simulation_based_NEW_C=1000_KERNEL=3.svm	71.7086834734%
+
+#############################################
+  POUR LE RAPPORT CAPTCHA-BASED (1896 captchas used):
+#############################################
+captcha_based_TR=1896_TEST=714_C=1000_KERNEL=2.svm	99.1596638655%
+captcha_based_TR=1896_TEST=714_C=1000_KERNEL=1.svm	99.1596638655%
+captcha_based_TR=1896_TEST=714_C=1000_KERNEL=0.svm	99.0196078431%
+captcha_based_TR=1896_TEST=714_C=1000_KERNEL=3.svm	97.7591036415%
+simulation_based_NEW_C=1000_KERNEL=0.svm	-169.6875%
+simulation_based_NEW_C=1000_KERNEL=3.svm	-170.0%
+simulation_based_NEW_C=1000_KERNEL=0.svm	-169.6875%
+simulation_based_NEW_C=1000_KERNEL=0.svm	-169.6875%
+simulation_based_NEW_C=1000_KERNEL=0.svm	-169.6875%
+simulation_based_NEW_C=1000_KERNEL=0.svm	-169.6875%
+simulation_based_NEW_C=1000_KERNEL=0.svm	-169.6875%
+simulation_based_NEW_C=1000_KERNEL=0.svm	-169.6875%
+simulation_based_NEW_C=1000_KERNEL=0.svm	-169.6875%
+simulation_based_NEW_C=1000_KERNEL=0.svm	100.0%
+simulation_based_NEW_C=1000_KERNEL=3.svm	100.0%
+simulation_based_NEW_C=1000_KERNEL=3.svm	73.75%
+captcha_based_TR=1896_TEST=714_C=1000_KERNEL=2.svm	-169.895833333%
+captcha_based_TR=1896_TEST=714_C=1000_KERNEL=1.svm	-177.083333333%
+captcha_based_TR=1896_TEST=714_C=1000_KERNEL=0.svm	-177.083333333%
+captcha_based_TR=1896_TEST=714_C=1000_KERNEL=3.svm	-171.875%
+captcha_based_TR=1896_TEST=714_C=1000_KERNEL=2.svm	99.1379310345%
+captcha_based_TR=1896_TEST=714_C=1000_KERNEL=1.svm	99.1379310345%
+captcha_based_TR=1896_TEST=714_C=1000_KERNEL=0.svm	98.275862069%
+captcha_based_TR=1896_TEST=714_C=1000_KERNEL=3.svm	97.4137931034%

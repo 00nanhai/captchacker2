@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/misc/!svn/ver/10116/trunk/pycaptcha/Captcha/Visual
+END
+Base.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misc/!svn/ver/10116/trunk/pycaptcha/Captcha/Visual/Base.py
+END
+Pictures.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/misc/!svn/ver/10116/trunk/pycaptcha/Captcha/Visual/Pictures.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/misc/!svn/ver/10116/trunk/pycaptcha/Captcha/Visual/__init__.py
+END
+Distortions.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/misc/!svn/ver/10116/trunk/pycaptcha/Captcha/Visual/Distortions.py
+END
+Backgrounds.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/misc/!svn/ver/10116/trunk/pycaptcha/Captcha/Visual/Backgrounds.py
+END
+Tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/misc/!svn/ver/10116/trunk/pycaptcha/Captcha/Visual/Tests.py
+END
+Text.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/misc/!svn/ver/10116/trunk/pycaptcha/Captcha/Visual/Text.py
+END

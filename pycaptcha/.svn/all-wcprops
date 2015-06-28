@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/misc/!svn/ver/10873/trunk/pycaptcha
+END
+BUGS
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/misc/!svn/ver/3753/trunk/pycaptcha/BUGS
+END
+http_example.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/misc/!svn/ver/3713/trunk/pycaptcha/http_example.py
+END
+modpython_example.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/misc/!svn/ver/3726/trunk/pycaptcha/modpython_example.py
+END
+setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/misc/!svn/ver/10117/trunk/pycaptcha/setup.py
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/misc/!svn/ver/10116/trunk/pycaptcha/COPYING
+END
+simple_example.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/misc/!svn/ver/3713/trunk/pycaptcha/simple_example.py
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/misc/!svn/ver/3727/trunk/pycaptcha/README
+END
