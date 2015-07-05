@@ -7,7 +7,6 @@
 ##目前主要工作
 这个项目改造自https://code.google.com/p/captchacker/，原项目已停止更新
 
-目前主要是修复了一些依赖库升级造成程序不可运行的问题，使可以运行在ubuntu下，主要更改在libsvm和opencv,boost
 
 ##接下来的工作
 
@@ -21,35 +20,12 @@
 ##环境搭建
 运行环境（以下在ubuntu12.04 64位机器下测试）
 		
-安装wxpython
-
-	sudo apt-get install python-wxgtk2.8 python-wxtools wx2.8-i18n libwxgtk2.8-dev libgtk2.0-dev
 安装libsvm
 
 	sudo apt-get install python-libsvm
 安装opencv
 
 	sudo apt-get install libopencv-dev python-opencv
-
-
-其他平台或32位机器需要重新编译C++源码，否则运行不了，编译完后替换
-，目前正在考虑用python实现。
-示例：
-
-编译 Egoshare Preprocessing：
-
-	g++ -I/usr/include/opencv main.cpp -o main -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
-
-
-编译 Centrage：
-
-安装boost，作者原来用的boost版本比较旧，部分接口已经废弃，这里重新换了接口，Change leaf() to path().filename().string()，nnative_directory_string() to string()
-	
-	sudo apt-get install libboost-dev libboost-filesystem-dev
-		
-	g++ -I/usr/include/opencv -I /usr/include/boost main.cpp -o main -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann -lboost_system  -lboost_filesystem
-
-
 
 生成验证码pycaptcha
 
@@ -59,33 +35,16 @@
 	cd pycaptcha
 	python setup.py install
 
-然后把captchacker目录下的Fonts里的字体，拷到如下路径里面，否则pycaptcha无法识别
+然后把captchacker目录下的Fonts里的字体，拷到如下路径里面，否则pycaptcha无法识别,这个包需要依赖PIL
 
 	sudo cp -r Fonts /usr/local/lib/python2.7/dist-packages/Captcha/data/fonts/
 
 
 ##程序说明：
-###程序框架
-以Egoshare为例
-
-Egoshare_1_GetCaptchas.py:主要是从网站获取图片
-
-Egoshare_1_bis_GetLabelledCaptchas.py：根据训练好的模型，识别验证码，这里需要用到Egoshare Preprocessing来分割验证码
-
-Egoshare_2_GenerateDB.py：生成数据库，有两种方式，一种用pycaptcha仿真，需要用到Centrage使图片居中，识别率不高，一种用网站原始数据，但是需要人眼识别，识别率高，注意：需要在文件中手动更改配置
-
-Egoshare_3_TrainTestSVM.py：训练模型并测试模型性能，这里有两种方式，一种是用仿真数据，一种是网站原始数据，注意：需要在文件中手动更改配置
-
-Egoshare_4_GUI.py：基于wxpython的图形化界面，可以手动选择模型和验证码
-
-Egoshare_5_TestPerf.py：性能测试工具
 	
 ###使用方式
 
-1. 运行Egoshare_1_GetCaptchas.py获取图片
-
-2. Egoshare_1_bis_GetLabelledCaptchas.py得到预测值  
-
+  
 
 ##将用到的算法
 
@@ -100,18 +59,20 @@ Egoshare_5_TestPerf.py：性能测试工具
 + svm支持向量机
 + 干扰线检测（深度优先搜索和最短路径算法）
 
-
 对于一些和文字颜色相同但是较为分散和单一的干扰像素点，我们可以用判断相邻像素的方法，对于每个点判断该点和相邻8个点的色差，若色差大于某个值，则+1，如果周围有超过6个点的色差都比较大，说明这个点是噪点。对于图像边界的一圈像素，周围没有8个像素，则统统清除，反正文字都在图片的中间位置。
 
 
 对于1个像素粗细的干扰线，在字符为2个像素以上的时候，可以用去噪点算法作为滤镜，多执行几次，就可以完美的把细干扰线去掉。
+
+种子填充算法可以方便的计算出任意色块的面积，对于没有粘连字符或者粘连但是字符每个颜色不一样的验证码来说，去除干扰色块的效果很好，你只需要大概计算一下最小的和最大的字符平均占多少像素，然后把这段区间之外像素数的色块排除掉即可。
+
 ###模型训练流程
 
 两种方式，采用自己的fonts训练，或者是采用原始网站验证码训练
 
 ###算法识别流程
 
-原始图片-》 彩色去噪（颜色过滤）-》干扰线检测-》二值转换-》黑白去噪（统计邻域像素，统计轮廓像素）-》切割（像素投影，动态规划，固定宽度扫描）-》标准化字符矫正-》SVM
+原始图片-》 彩色去噪（颜色过滤，去除背景）-》干扰线检测-》二值转换-》黑白去噪（统计邻域像素，统计轮廓像素）-》切割（种子填充，像素投影，动态规划，固定宽度扫描）-》标准化字符矫正-》SVM
 
 
 ##部分案例
